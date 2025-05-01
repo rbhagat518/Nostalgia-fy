@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4357FA082DB2054E00020E1A /* PKCE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4357FA072DB2054E00020E1A /* PKCE.swift */; };
+		4357FA0C2DB9C0CE00020E1A /* MontageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4357FA0B2DB9C0CE00020E1A /* MontageViewController.swift */; };
 		435B898D2DB1DD760049D8FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435B898C2DB1DD760049D8FA /* AppDelegate.swift */; };
 		435B898F2DB1DD760049D8FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435B898E2DB1DD760049D8FA /* SceneDelegate.swift */; };
 		435B89912DB1DD760049D8FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435B89902DB1DD760049D8FA /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4357FA072DB2054E00020E1A /* PKCE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKCE.swift; sourceTree = "<group>"; };
+		4357FA0B2DB9C0CE00020E1A /* MontageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MontageViewController.swift; sourceTree = "<group>"; };
 		435B89892DB1DD760049D8FA /* HelloSpotify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloSpotify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		435B898C2DB1DD760049D8FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		435B898E2DB1DD760049D8FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,7 +44,7 @@
 		435B89802DB1DD760049D8FA = {
 			isa = PBXGroup;
 			children = (
-				435B898B2DB1DD760049D8FA /* HelloSpotify */,
+				435B898B2DB1DD760049D8FA /* Nostalgia-fy */,
 				435B898A2DB1DD760049D8FA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,7 +57,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		435B898B2DB1DD760049D8FA /* HelloSpotify */ = {
+		435B898B2DB1DD760049D8FA /* Nostalgia-fy */ = {
 			isa = PBXGroup;
 			children = (
 				435B898C2DB1DD760049D8FA /* AppDelegate.swift */,
@@ -63,8 +67,10 @@
 				435B89952DB1DD790049D8FA /* Assets.xcassets */,
 				435B89972DB1DD790049D8FA /* LaunchScreen.storyboard */,
 				435B899A2DB1DD790049D8FA /* Info.plist */,
+				4357FA072DB2054E00020E1A /* PKCE.swift */,
+				4357FA0B2DB9C0CE00020E1A /* MontageViewController.swift */,
 			);
-			path = HelloSpotify;
+			path = "Nostalgia-fy";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4357FA082DB2054E00020E1A /* PKCE.swift in Sources */,
 				435B89912DB1DD760049D8FA /* ViewController.swift in Sources */,
 				435B898D2DB1DD760049D8FA /* AppDelegate.swift in Sources */,
+				4357FA0C2DB9C0CE00020E1A /* MontageViewController.swift in Sources */,
 				435B898F2DB1DD760049D8FA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,8 +300,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SXXX8WUQLP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HelloSpotify/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Nostalgia-fy";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -319,8 +329,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SXXX8WUQLP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HelloSpotify/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Nostalgia-fy";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
