@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Kil-DV-DgE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6MB-cc-rQL">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
-        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Nostalgia-fy-->
         <scene sceneID="bIF-4m-pnZ">
             <objects>
-                <viewController id="Kil-DV-DgE" customClass="ViewController" customModule="HelloSpotify" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Kil-DV-DgE" customClass="ViewController" customModule="Nostalgia_fy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5S1-8h-mot">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -31,11 +30,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
-                            <datePicker contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="inline" translatesAutoresizingMaskIntoConstraints="NO" id="pEL-fY-Vxt">
-                                <rect key="frame" x="8" y="102" width="377" height="345"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            </datePicker>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uqm-Dg-hmT">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uqm-Dg-hmT">
                                 <rect key="frame" x="249" y="59" width="144" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
@@ -44,10 +39,15 @@
                                     <action selector="loginWithSpotify:" destination="Kil-DV-DgE" eventType="touchUpInside" id="y3R-Cv-JHJ"/>
                                 </connections>
                             </button>
+                            <datePicker contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="inline" translatesAutoresizingMaskIntoConstraints="NO" id="pEL-fY-Vxt">
+                                <rect key="frame" x="41" y="100" width="310" height="307"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </datePicker>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="c2K-ah-ZE2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Nostalgia-fy" leftItemsSupplementBackButton="YES" id="D2J-G8-fGR"/>
                     <connections>
                         <outlet property="datePicker" destination="pEL-fY-Vxt" id="sGc-Zm-ME3"/>
                         <outlet property="tableView" destination="rUA-Ie-QOq" id="Se0-KG-OVR"/>
@@ -56,67 +56,56 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PNh-dB-gkM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1441.9847328244275" y="-2.1126760563380285"/>
+            <point key="canvasLocation" x="2368.7022900763359" y="-2.1126760563380285"/>
         </scene>
-        <!--Montage View Controller-->
+        <!--Montage-->
         <scene sceneID="K7c-jz-CbV">
             <objects>
-                <viewController storyboardIdentifier="ShowMontage" id="4gU-tr-fMq" customClass="MontageViewController" customModule="HelloSpotify" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ShowMontage" id="4gU-tr-fMq" customClass="MontageViewController" customModule="Nostalgia_fy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dsA-JC-cm2">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Track Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Odp-vp-9ad">
-                                <rect key="frame" x="16" y="54" width="361" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="WZ0-an-uQI">
-                                <rect key="frame" x="0.0" y="138" width="387" height="684"/>
+                            <view contentMode="scaleAspectFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OSk-St-V3Z">
+                                <rect key="frame" x="0.0" y="83" width="377" height="180"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ysC-Kf-NGn">
-                                    <size key="itemSize" width="382" height="690"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="ImageCell" reuseIdentifier="ImageCell" id="K6K-YL-qIR" customClass="ImageCell" customModule="HelloSpotify" customModuleProvider="target">
-                                        <rect key="frame" x="2.6666666666666665" y="0.0" width="382" height="690"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="rrq-wH-JAm">
-                                            <rect key="frame" x="0.0" y="0.0" width="382" height="690"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="riR-MF-ELv">
-                                                    <rect key="frame" x="8" y="0.0" width="374" height="682"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                            </subviews>
-                                        </collectionViewCellContentView>
-                                        <size key="customSize" width="382" height="690"/>
-                                        <connections>
-                                            <outlet property="imageView" destination="riR-MF-ELv" id="hnX-WE-1YB"/>
-                                        </connections>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YjW-cU-2v8">
+                                <rect key="frame" x="0.0" y="167" width="393" height="685"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qTq-4d-WTt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="iMi-Hn-0Qe"/>
+                    <navigationItem key="navigationItem" title="Montage" id="iMi-Hn-0Qe"/>
                     <connections>
-                        <outlet property="collectionView" destination="WZ0-an-uQI" id="bfT-c5-y1h"/>
-                        <outlet property="titleLabel" destination="Odp-vp-9ad" id="5Ev-2A-3XZ"/>
+                        <outlet property="imageView" destination="YjW-cU-2v8" id="dDa-Zx-EVa"/>
+                        <outlet property="spotifyEmbedContainer" destination="OSk-St-V3Z" id="ZNi-6o-PWJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N5I-YH-zL6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2623.6641221374043" y="-4.2253521126760569"/>
+            <point key="canvasLocation" x="3550.3816793893129" y="-4.2253521126760569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4bv-BM-ojD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6MB-cc-rQL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rkc-lB-RwY">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Kil-DV-DgE" kind="relationship" relationship="rootViewController" id="YaR-dc-GUi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GD8-c6-nUH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1441.9847328244275" y="-2.1126760563380285"/>
         </scene>
     </scenes>
     <resources>

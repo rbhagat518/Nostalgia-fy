@@ -24,7 +24,18 @@ struct PlayedItem: Codable {
 struct Track: Codable {
     let name: String
     let artists: [Artist]
+    let previewURL: String?
+    let externalURLs: [String: String]
+
+    enum CodingKeys: String, CodingKey {
+        case name
+        case artists
+        case previewURL = "preview_url"
+        case externalURLs = "external_urls"
+    }
 }
+
+
 
 struct Artist: Codable {
     let name: String
@@ -46,6 +57,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        
+        navigationItem.title = "Nostalgia-fy"
+
+        let logoImage = UIImage(named: "spotifylogopng")?.withRenderingMode(.alwaysOriginal)
+        let loginButton = UIBarButtonItem(image: logoImage, style: .plain, target: self, action: #selector(loginWithSpotify))
+        navigationItem.rightBarButtonItem = loginButton
     }
 
     @IBAction func loginWithSpotify(_ sender: UIButton) {
@@ -117,6 +134,35 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             }
         }.resume()
     }
+    
+    func fetchFullTrackInfo(trackID: String, completion: @escaping (Track?) -> Void) {
+        guard let token = accessToken else {
+            completion(nil)
+            return
+        }
+
+        let url = URL(string: "https://api.spotify.com/v1/tracks/\(trackID)")!
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+        request.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
+
+        URLSession.shared.dataTask(with: request) { data, response, error in
+            guard let data = data else {
+                print("❌ No data for track ID: \(trackID)")
+                completion(nil)
+                return
+            }
+
+            do {
+                let fullTrack = try JSONDecoder().decode(Track.self, from: data)
+                print("✅ Full track preview URL:", fullTrack.previewURL ?? "none")
+                completion(fullTrack)
+            } catch {
+                print("⚠️ Failed to decode full track:", error)
+                completion(nil)
+            }
+        }.resume()
+    }
 
     @IBAction func fetchTracksTapped(_ sender: UIButton) {
         let selectedDate = datePicker.date
@@ -142,6 +188,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
             do {
                 let decoded = try JSONDecoder().decode(SpotifyResponse.self, from: data)
+                for item in decoded.items {
+                    print("🎧 Track:", item.track.name)
+                }
 
                 var calendar = Calendar.current
                 calendar.timeZone = TimeZone(secondsFromGMT: 0)!
@@ -193,6 +242,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
            let item = selectedItem {
             dest.track = item.track
             dest.playedAt = item.playedAt
+            dest.accessToken = self.accessToken
         }
     }
 }

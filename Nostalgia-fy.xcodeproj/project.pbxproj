@@ -20,7 +20,7 @@
 /* Begin PBXFileReference section */
 		4357FA072DB2054E00020E1A /* PKCE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKCE.swift; sourceTree = "<group>"; };
 		4357FA0B2DB9C0CE00020E1A /* MontageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MontageViewController.swift; sourceTree = "<group>"; };
-		435B89892DB1DD760049D8FA /* HelloSpotify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloSpotify.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		435B89892DB1DD760049D8FA /* Nostalgia-fy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nostalgia-fy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		435B898C2DB1DD760049D8FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		435B898E2DB1DD760049D8FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		435B89902DB1DD760049D8FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,7 +52,7 @@
 		435B898A2DB1DD760049D8FA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				435B89892DB1DD760049D8FA /* HelloSpotify.app */,
+				435B89892DB1DD760049D8FA /* Nostalgia-fy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,9 +76,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		435B89882DB1DD760049D8FA /* HelloSpotify */ = {
+		435B89882DB1DD760049D8FA /* Nostalgia-fy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 435B899D2DB1DD790049D8FA /* Build configuration list for PBXNativeTarget "HelloSpotify" */;
+			buildConfigurationList = 435B899D2DB1DD790049D8FA /* Build configuration list for PBXNativeTarget "Nostalgia-fy" */;
 			buildPhases = (
 				435B89852DB1DD760049D8FA /* Sources */,
 				435B89862DB1DD760049D8FA /* Frameworks */,
@@ -88,9 +88,9 @@
 			);
 			dependencies = (
 			);
-			name = HelloSpotify;
+			name = "Nostalgia-fy";
 			productName = HelloSpotify;
-			productReference = 435B89892DB1DD760049D8FA /* HelloSpotify.app */;
+			productReference = 435B89892DB1DD760049D8FA /* Nostalgia-fy.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -108,7 +108,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 435B89842DB1DD760049D8FA /* Build configuration list for PBXProject "HelloSpotify" */;
+			buildConfigurationList = 435B89842DB1DD760049D8FA /* Build configuration list for PBXProject "Nostalgia-fy" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -121,7 +121,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				435B89882DB1DD760049D8FA /* HelloSpotify */,
+				435B89882DB1DD760049D8FA /* Nostalgia-fy */,
 			);
 		};
 /* End PBXProject section */
@@ -302,7 +302,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SXXX8WUQLP;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HelloSpotify/Info.plist;
+				INFOPLIST_FILE = "Nostalgia-fy/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Nostalgia-fy";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -314,7 +314,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = CodePath.HelloSpotify;
+				PRODUCT_BUNDLE_IDENTIFIER = "CodePath.Nostaligia-fy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -331,7 +331,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SXXX8WUQLP;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HelloSpotify/Info.plist;
+				INFOPLIST_FILE = "Nostalgia-fy/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Nostalgia-fy";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -343,7 +343,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = CodePath.HelloSpotify;
+				PRODUCT_BUNDLE_IDENTIFIER = "CodePath.Nostaligia-fy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -354,7 +354,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		435B89842DB1DD760049D8FA /* Build configuration list for PBXProject "HelloSpotify" */ = {
+		435B89842DB1DD760049D8FA /* Build configuration list for PBXProject "Nostalgia-fy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				435B899B2DB1DD790049D8FA /* Debug */,
@@ -363,7 +363,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		435B899D2DB1DD790049D8FA /* Build configuration list for PBXNativeTarget "HelloSpotify" */ = {
+		435B899D2DB1DD790049D8FA /* Build configuration list for PBXNativeTarget "Nostalgia-fy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				435B899E2DB1DD790049D8FA /* Debug */,
